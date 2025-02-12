@@ -31,15 +31,15 @@ export default function Home() {
     
     return (
         <div className="relative min-h-screen pb-20">
-            <div className="flex justify-center items-center w-full min-h-screen bg-slate-200">
+            <div className="flex justify-center items-center w-full md:pt-28 md:pb-0 py-16 px-3 bg-slate-950">
                 <div className='flex flex-col-reverse md:flex-row justify-between items-center w-full px-4 md:px-8 lg:px-12'>
                     <div className='flex items-start flex-col justify-center w-full md:w-1/2 lg:max-w-2xl mt-8 md:mt-0'>
-                        <h1 className="text-slate-600 font-bold text-2xl md:text-3xl lg:text-4xl pb-4 md:pb-8 text-center md:text-left">
-                            Aproveite as <span className="text-yellow-600">Promoções </span>
-                            <span className="text-blue-950">cadastre seu e-mail</span> para não perder nada!
+                        <h1 className="text-slate-100 font-bold text-2xl md:text-3xl lg:text-4xl pb-4 md:pb-8 text-center md:text-left">
+                            Aproveite as <span className="text-yellow-300">Promoções </span>
+                            <span className="text-blue-300">cadastre seu e-mail</span> para não perder nada!
                         </h1>
-                        <p className="text-slate-500 text-center md:text-left w-full">
-                            cadastre um <span className="text-blue-950 font-semibold">e-mail válido</span> no campo abaixo
+                        <p className="text-slate-100 text-center md:text-left w-full">
+                            cadastre um <span className="text-blue-300 font-semibold">e-mail válido</span> no campo abaixo
                         </p>
                         <div className='bg-white w-full md:w-5/6 mt-4 py-3 md:py-4 px-4 md:px-6 rounded-md flex justify-between'>
                             <input
@@ -63,7 +63,7 @@ export default function Home() {
                 </div>
             </div>
             <div>
-                <h3 className='text-center pt-16 pb-8 text-5xl font-bold text-blue-950'>Mais Vendidos</h3>
+                <h3 className='text-center pt-10 pb-8 text-5xl font-bold text-blue-950'>Mais Vendidos</h3>
             </div>
             <div>
                 <CarrouselProduct/>

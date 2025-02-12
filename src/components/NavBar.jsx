@@ -12,7 +12,7 @@ import {
 
 export default function NavBar() {
   const location = useLocation();
-  const hiddenRoutes = ["/address", "/payment", "/finalizing"];
+  const hiddenRoutes = ["/thankyou", "/address", "/payment", "/finalizing", "/review"];
 
   if (hiddenRoutes.includes(location.pathname)) {
     return null;
@@ -33,20 +33,20 @@ export default function NavBar() {
   const navList = (
     <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography as="li" variant="small" className="flex items-center gap-x-2 p-1 font-medium text-gray-300">
-        <FontAwesomeIcon icon={faBoxOpen} className="w-5 h-5 text-gray-300" />
-        <Link to="/" className="flex items-center text-gray-300 hover:text-gray-100">
+        <FontAwesomeIcon icon={faBoxOpen} className="w-5 h-5 text-white" />
+        <Link to="/" className="flex items-center text-white hover:text-gray-100">
           Produtos
         </Link>
       </Typography>
       <Typography as="li" variant="small" className="flex items-center gap-x-2 p-1 font-medium text-gray-300">
-        <FontAwesomeIcon icon={faSackDollar} className="w-5 h-5 text-gray-300" />
-        <a href="#" className="flex items-center text-gray-300 hover:text-gray-100">
+        <FontAwesomeIcon icon={faSackDollar} className="w-5 h-5 text-white" />
+        <a href="#" className="flex items-center text-white hover:text-gray-100">
           Vender
         </a>
       </Typography>
       <Typography as="li" variant="small" className="flex items-center gap-x-2 p-1 font-medium text-gray-300">
-        <FontAwesomeIcon icon={faStar} className="w-5 h-5 text-gray-300" />
-        <a href="#" className="flex items-center text-gray-300 hover:text-gray-100">
+        <FontAwesomeIcon icon={faStar} className="w-5 h-5 text-white" />
+        <a href="#" className="flex items-center text-white hover:text-gray-100">
           Premium
         </a>
       </Typography>
@@ -54,9 +54,9 @@ export default function NavBar() {
   );
 
   return (
-    <Navbar className="fixed top-0 left-0 right-0 z-50 mx-auto w-full px-4 py-2 lg:px-8 lg:py-4 bg-slate-950 border-none">
+    <Navbar className="fixed top-0 left-0 right-0 z-50 mx-auto w-full px-4 py-2 lg:px-8 lg:py-4 bg-slate-950 rounded-none border-none">
       <div className="container mx-auto flex items-center justify-between">
-        <Typography as="a" href="/" className="mr-4 cursor-pointer py-1.5 pr-9 font-medium text-gray-300">
+        <Typography as="a" href="/" className="mr-4 cursor-pointer py-1.5 pr-9 font-medium text-white">
           Clenus Store
         </Typography>
         <div className="hidden lg:block">{navList}</div>

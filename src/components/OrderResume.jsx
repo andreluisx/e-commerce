@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import Button from "./Button";
 import { useNavigate } from "react-router-dom";
 
-export default function OrderResume({ frete, disabled, nextPage }) {
+export default function OrderResume({ frete, disabled, nextPage, buttonPlaceholder='Continuar' }) {
     const navigate = useNavigate();
 
     // Função para formatar valores em BRL
@@ -36,7 +36,7 @@ export default function OrderResume({ frete, disabled, nextPage }) {
                 </div>
             </div>
             <Button
-                placeholder={"Continuar"}
+                placeholder={buttonPlaceholder}
                 disable={!disabled}
                 onPress={() => navigate(nextPage)}
             />

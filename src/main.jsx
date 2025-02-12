@@ -9,6 +9,10 @@ import Fake from './screens/Fake.jsx';
 import ProductDetails from './screens/ProductDetails.jsx';
 import Checkout from './screens/Checkout.jsx';
 import AddressScreen from './screens/AddressScreen.jsx';
+import PaymentScreen from './screens/PaymentScreen.jsx';
+import ReviewScreen from './screens/ReviewScreen.jsx';
+import ThankYouScreen from './screens/ThankYouScreen.jsx';
+import Footer from './components/Footer.jsx';
 
 
 createRoot(document.getElementById('root')).render(
@@ -24,8 +28,12 @@ createRoot(document.getElementById('root')).render(
           <Route path="/details" element={<ProductDetails />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/address" element={<AddressScreen />} />
+          <Route path="/payment" element={<PaymentScreen />} />
+          <Route path="/review" element={<ReviewScreen />} />
+          <Route path="/thankyou" element={<ThankYouScreen />} />
 
         </Routes>
+        <Footer/>
       </BrowserRouter>
   </StrictMode>,
 )
