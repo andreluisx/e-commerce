@@ -6,7 +6,7 @@ import pixel from '../images/pixel.jpg';
 export default [
   {
     id: 1,
-    img: imagem,
+    img: [imagem, galaxy],
     name: 'Apple Iphone 16 512gb - Azul',
     stars: 3.6,
     reviews: 358,
@@ -16,7 +16,7 @@ export default [
   },
   {
     id: 2,
-    img: galaxy,
+    img: [galaxy, imagem],
     name: 'Samsung Galaxy S24 Ultra 1TB - Preto',
     stars: 4.2,
     reviews: 425,
@@ -26,7 +26,7 @@ export default [
   },
   {
     id: 3,
-    img: xiaomi,
+    img: [xiaomi, imagem],
     name: 'Xiaomi 14 Pro 256GB - Titanium',
     stars: 4.0,
     reviews: 287,
@@ -36,7 +36,7 @@ export default [
   },
   {
     id: 4,
-    img: pixel,
+    img: [pixel, imagem],
     name: 'Google Pixel 8 Pro 512GB - Obsidian',
     stars: 4.5,
     reviews: 312,

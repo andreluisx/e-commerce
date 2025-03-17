@@ -18,8 +18,8 @@ export default function AdressCard({address, selectedCard, setSelectedCard}){
                     </div>
                 </div>
                 <div className="w-1/5 md:w-2/6 flex justify-center md:justify-end items-center flex-shrink-0">
-                    <button onClick={()=>setSelectedCard(address)} className="h-14 w-14 flex justify-center items-center bg-slate-50 border-slate-400 border-solid border-2 rounded-full">
-                        {selectedCard === address && <div className="h-9 w-9 bg-slate-800 rounded-full"/>}
+                    <button onClick={()=>setSelectedCard(address)} className="h-6 w-6 flex justify-center items-center bg-slate-50 border-slate-400 border-solid border-2 rounded-full">
+                        {selectedCard === address && <div className="h-3 w-3 bg-slate-800 rounded-full"/>}
                     </button>
                 </div>
             </div>
